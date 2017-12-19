@@ -96,7 +96,9 @@ public class GildedRoseTest {
 												
 					{"16,  mark03. ",
 					//"Sulfuras, Hand of Ragnaros", 1, 0, 1, 0},
-					"Item with arbitrary name", 2, 0, 1, 0},
+					//"Aged Brie", 2, 0, 1, 0},
+					//"Backstage passes to a TAFKAL80ETC concert", 0, 0, -1, 1},
+					"some item", 0, 0, -1, 1},
 					
 					
 					//must be implemented

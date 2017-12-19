@@ -66,6 +66,7 @@ public class GildedRose {
 				items.get(i).setSellIn(items.get(i).getSellIn() - 1);
 			}
 
+			
 			if (items.get(i).getSellIn() < 0) {
 				
 				if (!"Aged Brie".equals(items.get(i).getName())) {
