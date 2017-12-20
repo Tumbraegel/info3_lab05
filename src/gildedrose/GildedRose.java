@@ -6,7 +6,8 @@ import java.util.List;
 public class GildedRose {
 
 	private static List<Item> items = null;
-
+	
+	
 	/**
 	 * @param args
 	 */
@@ -25,9 +26,16 @@ public class GildedRose {
 		updateQuality();
 	}
 	
+	
+	public static void updateQualityStrategy() {
+		
+	}
+	
 
 	public static void updateQuality() {
+		
 		for (int i = 0; i < items.size(); i++) {
+			
 			if ((!"Aged Brie".equals(items.get(i).getName()))
 					&& !"Backstage passes to a TAFKAL80ETC concert"
 							.equals(items.get(i).getName())) {
@@ -40,6 +48,7 @@ public class GildedRose {
 				}
 				
 			} else {
+				
 				if (items.get(i).getQuality() < 50) {
 					items.get(i).setQuality(items.get(i).getQuality() + 1);
 
@@ -47,15 +56,13 @@ public class GildedRose {
 							.equals(items.get(i).getName())) {
 						if (items.get(i).getSellIn() < 11) {
 							if (items.get(i).getQuality() < 50) {
-								items.get(i).setQuality(
-										items.get(i).getQuality() + 1);
+								items.get(i).setQuality(items.get(i).getQuality() + 1);
 							}
 						}
 
 						if (items.get(i).getSellIn() < 6) {
 							if (items.get(i).getQuality() < 50) {
-								items.get(i).setQuality(
-										items.get(i).getQuality() + 1);
+								items.get(i).setQuality(items.get(i).getQuality() + 1);
 							}
 						}
 					}
@@ -82,13 +89,15 @@ public class GildedRose {
 						
 					} else {
 						items.get(i).setQuality(
-								items.get(i).getQuality()
-										- items.get(i).getQuality());
+								items.get(i).getQuality() - items.get(i).getQuality());
 					}
+					
 				} else { //it is for Aged Brie. mark 01
+					
 					if (items.get(i).getQuality() < 50) { //mark 02
 						items.get(i).setQuality(items.get(i).getQuality() + 1);
 					}
+					
 				}
 			}
 		}
